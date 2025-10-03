@@ -7,4 +7,4 @@ order. This UI is built by HTML and CSS and the internal logic of calculation is
    here we use HTML and CSS to build the UI and the internal logic whether the chosen one is the correct one or not , is identified using the internal logic of JavaScript. Also the max_score is stored in the localStorage so that it does not vanish while refreshing.
 
 3. GFG Clone: Used simple HTML and CSS to make a basic static non-functional GeeksForGeeks UI
-4. 
+4. location: Helps to get the current location of the user i.e. latitute and longitude using the Global Positioning System. By this longitude and latitude, user can identify its current position in the world, also get some information about its current places and surroundings like weather or traffic.
