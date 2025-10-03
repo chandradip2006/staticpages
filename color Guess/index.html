@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR GUESS</title>
+    <style>
+        #color-box{
+            height:30vh;
+            width: 100vw;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* display: grid; */
+            /* grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr); */
+        }
+
+        
+
+        #color-box > div{
+            cursor: pointer;
+            height:60%;
+            width:17%;
+            border-radius:7px;
+            margin:5px;
+            box-shadow:0px 0px 5px black
+        }
+        #color-box>div:active{
+            border: 2px solid black;
+            transform: scale(0.9);
+        }
+
+        @media (max-width: 600px) {
+            #color-box{
+                width: 80vw;
+                height: 80vh;
+                flex-direction: column;
+            }
+            #color-box > div{
+                width: 80%;
+                height: 20vh;
+            }
+        }
+        
+        /* #color-box>div:hover{
+            /* border: 2px solid black; */
+            /* transform: scale(1.02);
+            transition: 0.4s all; */
+        /* } */ 
+    </style>
+</head>
+<body>
+
+    <h1 id="color-coder"></h1>
+
+    <div id="color-box"></div>
+
+    <h3 style="text-align: center;">score: <span id="score"></span></h3>
+    <h3 style="text-align: center;">MAX-score: <span id="max-score"></span></h3>
+    
+    <script src="script.js"></script>
+</body>
+</html>

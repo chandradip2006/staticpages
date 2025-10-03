@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* box-sizing: border-box; */
+    flex-direction: column;
+}
+#box{
+    height: 70px;
+    
+}
+#navigation{
+    position: fixed;
+    left: -6px;
+    height: 70px;
+    /* border: 2px solid black; */
+    width: 100vw;
+    margin: 5px;
+    background-color:rgba(95, 158, 160 , 0.8) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px brown;
+    
+
+}
+#title{
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+span{
+    display: inline-block;
+    margin: 10px;
+}
+img{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#button{
+    /* box-sizing: border-box; */
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration:none;
+}
+#Disclaimer{
+    position:fixed;
+    height: 40px;
+    width: 100vw;
+    /* border: 1px solid black; */
+    top:80px;
+    overflow: hidden;
+}
+#headline{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    animation-name: leftMovement;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes leftMovement {
+    from{
+        left:100vw;
+    }
+    to{
+        left: -1100px;
+    }
+}
+@media (max-width:700px){
+    #navigation{
+        flex-direction: column;
+        height: 350px;
+        position: static;
+    }
+    #button{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #title{
+        height: 30%;
+        width: 100%;
+    }
+    #box{
+        height: 350px;
+    }
+    #Disclaimer{
+        top:360px;
+        
+        
+    }
+}
+
+#menu{
+    display: flex;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.card{
+    height: 80%;
+    width: 80%;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px green;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow: auto;
+
+}
+.item{
+    height: 40%;
+    /* width: 98%; */
+    /* background-color: blue; */
+    /* border: 5px solid black; */
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+
+     display: flex; 
+    flex-direction: row;
+    justify-content: space-around; 
+    box-shadow: 0px 0px 10px red;
+
+    
+}
+.item:hover{
+    transform: scale(1.02);
+}
+#description{
+    background-color:darkgray;
+    border-radius: 20px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.img{
+    width: 27%;
+    /* border: 1px solid black; */
+    background-size: cover; /* Ensures the image covers the entire area */
+      background-repeat: no-repeat; /* Prevents tiling */
+      background-position: center;
+    border-radius: 20px;
+}
+#img1{
+    background-image: url("biryani.jpeg");
+    
+}
+#img2{
+    background-image: url("egg roll.jpeg");
+    
+}
+#img3{
+    background-image: url("milkshake.jpeg");
+    
+}
+#img4{
+    background-image: url("chicken curry.jpeg");
+    
+}
+#img5{
+    background-image: url("dosa.jpeg");
+    
+}
+#img6{
+    background-image: url("paneer\ butter\ masala.jpeg");
+    
+}
+#img7{
+    background-image: url("idli.jpeg");
+    
+}
+#img8{
+    background-image: url("fish\ curry.jpeg");
+    
+}
+#img9{
+    background-image: url("chole\ bhatura.jpeg");
+    
+}
+#img10{
+    background-image: url("mutton.jpeg");
+    
+}
+
+h3{
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+    animation-name: color_change;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 25px;
+    position: sticky;
+}
+#content{
+    overflow: auto;
+    
+}
+p{
+    /* overflow: auto; */
+    color:blanchedalmond;
+    text-align: center;
+    animation-name: up_move;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    
+    position: relative;
+    
+}
+@keyframes up_move {
+    from{
+        top:400px;
+    }
+    to{
+        top:-950px
+    }
+}
+
+@keyframes color_change {
+    from{
+        color: red;
+    }
+    to{
+        color: yellow;
+    }
+}
+
+
+
+
