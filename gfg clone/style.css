@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    color: aliceblue;
+    align-items: center;
+}
+#icon{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon h1{
+    width: 100%;
+    text-align: center;
+}
+#search{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    height: 50%;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+.option{
+    height: 5vh;
+    background-color: rgb(80, 198, 125);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: azure;
+    margin: 20px;
+    
+}
+footer{
+    height: 7vh;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.container{
+    height: 78vh;
+}
+#intro{
+    height: 50%;
+    background-color: rgb(215, 240, 215);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#feature{
+    height: 50%;
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 70%;
+    width: 25%;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgb(176, 174, 174);
+}
+#card:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+#heading{
+    color: green;
+    margin: 10px;
+}
+#name{
+    color: green;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+p{
+    text-align: center;
+}
